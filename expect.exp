@@ -1,0 +1,15 @@
+spawn heroku "login"
+
+expect "Email:"
+
+sent "mark.freedman@tulip.co"
+
+send "\r"
+
+expect "Password (typing will be hidden):"
+
+send "D0nk3yl15pgso?"
+
+send "\r"
+
+interact
